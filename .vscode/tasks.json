@@ -1,0 +1,51 @@
+{
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "options": {
+    "env": {
+      "NODE_ENV": "development"
+    }
+  },
+  "tasks": [
+    {
+      "taskName": "clean",
+      "args": ["run", "clean"]
+    },
+    {
+      "taskName": "lint",
+      "args": ["run", "lint"]
+    },
+    {
+      "taskName": "start",
+      "args": ["run", "start"]
+    },
+    {
+      "taskName": "tsc",
+      "args": ["run", "tsc"],
+      "isBuildCommand": true
+    },
+    {
+      "taskName": "tsc:watch",
+      "args": ["run", "tsc:watch"],
+      "isWatching": true
+    },
+    {
+      "taskName": "test",
+      "args": ["run", "test"],
+      "isTestCommand": true
+    },
+    {
+      "taskName": "test:watch",
+      "args": ["run", "test:watch"],
+      "isWatching": true
+    },
+    {
+      "taskName": "watch",
+      "args": ["run", "watch"],
+      "isWatching": true
+    }
+  ]
+}

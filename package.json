@@ -1,0 +1,34 @@
+{
+  "name": "typescript-node-boilerplate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "build/main.js",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "tslint src/**/*.ts src/*/*.ts",
+    "start": "node build/main.js",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch",
+    "test": "mocha --opts src/test/mocha.opts",
+    "test:watch": "mocha --opts src/test/mocha.opts --watch",
+    "watch": "concurrently --raw 'npm run tsc:watch' 'npm run test:watch'"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/bunyan": "0.0.30",
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.1.0",
+    "mocha": "^3.1.2",
+    "rimraf": "^2.5.4",
+    "source-map-support": "^0.4.5",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.6"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

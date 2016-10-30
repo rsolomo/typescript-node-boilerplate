@@ -1,0 +1,47 @@
+{
+  "rules": {
+    "no-namespace": true,
+    "no-internal-module": true,
+    "no-reference": true,
+    "no-var-requires": true,
+
+    "forin": true,
+    "label-position": true,
+    "no-arg": true,
+    "no-conditional-assignment": true,
+    "no-console": [true, "log", "error"],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-key": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-switch-case-fall-through": true,
+    "no-unreachable": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": true,
+    "no-unused-new": true,
+    "no-unused-variable": true,
+    "no-var-keyword": true,
+    "radix": true,
+    "switch-default": true,
+    "triple-equals": [true, "allow-null-check"],
+    "use-isnan": true,
+
+    "eofline": true,
+    "indent": [true, "spaces"],
+    "linebreak-style": [true, "LF"],
+    "no-default-export": true,
+    "no-trailing-whitespace": true,
+
+    "class-name": true,
+    "interface-name": [true, "never-prefix"],
+    "jsdoc-format": true,
+    "new-parens": true,
+    "no-angle-bracket-type-assertion": true,
+    "no-consecutive-blank-lines": true,
+    "one-line": [true],
+    "quotemark": [true, "single"],
+    "semicolon": [true, "never"],
+    "variable-name": [true, "ban-keywords"]
+  }
+}

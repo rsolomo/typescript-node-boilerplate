@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Test",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+      "stopOnEntry": false,
+      "args": ["--opts", "src/test/mocha.opts"],
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": "tsc",
+      "runtimeExecutable": null,
+      "sourceMaps": true,
+      "runtimeArgs": ["--nolazy"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js"]
+    },
+    {
+      "name": "Run",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceRoot}/dist/app/main.js",
+      "stopOnEntry": false,
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": "tsc",
+      "runtimeExecutable": null,
+      "sourceMaps": true,
+      "runtimeArgs": ["--nolazy"],
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "internalConsole",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js"]
+    }
+  ]
+}
