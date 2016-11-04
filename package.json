@@ -5,6 +5,7 @@
   "main": "build/main.js",
   "private": true,
   "scripts": {
+    "all": "npm run tsc && npm run lint && npm test",
     "clean": "rimraf dist",
     "lint": "tslint src/**/*.ts src/*/*.ts",
     "start": "node build/main.js",

@@ -11,6 +11,10 @@
   },
   "tasks": [
     {
+      "taskName": "all",
+      "args": ["run", "all"]
+    },
+    {
       "taskName": "clean",
       "args": ["run", "clean"]
     },
