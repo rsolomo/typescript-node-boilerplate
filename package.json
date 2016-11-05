@@ -8,7 +8,7 @@
     "all": "npm run tsc && npm run lint && npm test",
     "clean": "rimraf dist",
     "lint": "tslint src/**/*.ts src/*/*.ts",
-    "start": "node dist/app/main.js",
+    "start": "node --require source-map-support/register dist/app/main.js",
     "tsc": "tsc",
     "tsc:watch": "tsc --watch",
     "test": "mocha --opts src/test/mocha.opts",
